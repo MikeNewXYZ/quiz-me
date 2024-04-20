@@ -4,6 +4,7 @@ import {
 	YoutubeLogo,
 } from "@phosphor-icons/react/dist/ssr";
 import InputButton from "./input-button";
+import BackButton from "@/components/back-button/back-button";
 
 export default function PickInputTypePage() {
 	return (
@@ -55,6 +56,8 @@ export default function PickInputTypePage() {
 					href="/input/youtube"
 				/>
 			</div>
+
+			<BackButton href="/" text="back to home" />
 		</main>
 	);
 }
