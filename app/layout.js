@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body className={inter.className}>
-				<div className="relative z-10">{children}</div>
+				<div className="container relative z-10 mx-auto">{children}</div>
 				<Background />
 			</body>
 		</html>
