@@ -38,10 +38,10 @@ export default function Button({ text, ...rest }) {
 
 	return (
 		<button
-			className="mt-6 border-4 border-neutral-50 p-3 text-2xl uppercase transition-transform hover:scale-105 active:scale-100"
+			{...rest}
+			className={`mt-6 border-4 border-neutral-50 p-3 text-2xl uppercase transition-colors hover:border-red-600 hover:text-red-600 ${rest.className}`}
 			onMouseEnter={() => setIsHover(true)}
 			onMouseLeave={() => setIsHover(false)}
-			{...rest}
 		>
 			{buttonText}
 		</button>
