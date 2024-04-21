@@ -6,7 +6,7 @@ import {
 import InputButton from "./input-button";
 import BackButton from "@/components/back-button/back-button";
 
-export default function PickInputTypePage() {
+export default function InputPage() {
 	return (
 		<main className="flex h-screen w-full flex-col items-center justify-center text-center uppercase sm:pb-14">
 			<h1 className="animate-fade-down text-2xl sm:text-4xl">
