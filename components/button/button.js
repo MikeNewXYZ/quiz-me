@@ -39,7 +39,7 @@ export default function Button({ text, ...rest }) {
 	return (
 		<button
 			{...rest}
-			className={`text-md mt-6 border-4 border-neutral-50 p-2 uppercase transition-colors hover:border-red-600 hover:text-red-600 md:p-3 md:text-2xl ${rest.className}`}
+			className={`text-md border-4 border-neutral-50 p-2 uppercase transition-colors hover:border-red-600 hover:text-red-600 md:p-3 md:text-2xl ${rest.className}`}
 			onMouseEnter={() => setIsHover(true)}
 			onMouseLeave={() => setIsHover(false)}
 		>

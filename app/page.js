@@ -10,7 +10,7 @@ export default function HomePage() {
 			<p className="animate-fade-left animate-delay-300 mt-4 text-xs md:text-lg">
 				Transforming Worlds Into Knowledge
 			</p>
-			<Link href="/input">
+			<Link className="mt-6" href="/input">
 				<Button
 					className="animate-fade-up animate-delay-500"
 					text="get started"
