@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Background from "@/components/background/background";
+import { AppContextWrapper } from "@/context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,8 +14,10 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body className={inter.className}>
-				<div className="container relative z-10 mx-auto">{children}</div>
-				<Background />
+				<AppContextWrapper>
+					<div className="container relative z-10 mx-auto">{children}</div>
+					<Background />
+				</AppContextWrapper>
 			</body>
 		</html>
 	);

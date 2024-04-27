@@ -15,10 +15,10 @@ export default function InputPage() {
 
 			<div className="mt-8 flex flex-wrap items-start justify-center gap-4 sm:gap-8">
 				<InputButton
-					className="animate-fade-up animate-delay-100 group"
+					className="group animate-fade-up animate-delay-100"
 					Icon={
 						<TextAlignLeft
-							className="group-hover:animate-infinite group-hover:animate-wiggle"
+							className="group-hover:animate-wiggle group-hover:animate-infinite"
 							size="100%"
 							color="currentColor"
 							weight="light"
@@ -29,10 +29,10 @@ export default function InputPage() {
 				/>
 
 				<InputButton
-					className="animate-fade-up animate-delay-300 group"
+					className="group animate-fade-up animate-delay-300"
 					Icon={
 						<FileText
-							className="group-hover:animate-infinite group-hover:animate-wiggle"
+							className="group-hover:animate-wiggle group-hover:animate-infinite"
 							size="100%"
 							color="currentColor"
 							weight="light"
@@ -43,10 +43,10 @@ export default function InputPage() {
 				/>
 
 				<InputButton
-					className="animate-fade-up animate-delay-500 group"
+					className="group animate-fade-up animate-delay-500"
 					Icon={
 						<YoutubeLogo
-							className="group-hover:animate-infinite group-hover:animate-wiggle"
+							className="group-hover:animate-wiggle group-hover:animate-infinite"
 							size="100%"
 							color="currentColor"
 							weight="light"
