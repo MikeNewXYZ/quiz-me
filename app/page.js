@@ -8,7 +8,7 @@ export default function HomePage() {
 				QUIZ-ME
 			</h1>
 			<p className="mt-4 animate-fade-left text-xs animate-delay-300 md:text-lg">
-				Transforming Worlds Into Knowledge
+				Transforming Words Into Knowledge
 			</p>
 			<Link className="mt-6" href="/pick-input-type">
 				<Button
