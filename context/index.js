@@ -1,5 +1,4 @@
 "use client";
-import createQuiz from "@/lib/createQuiz";
 import { createContext, useContext, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
