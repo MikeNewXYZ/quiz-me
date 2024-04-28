@@ -42,12 +42,13 @@ export default function InputDocumentPage() {
 				) : (
 					<>
 						{file ? (
-							<div>
-								<p className="flex items-center justify-center gap-4">
-									<FileText /> <span>{file.path}</span>
-								</p>
-								<p className="mt-4">click generate</p>
+							<div className="w-full overflow-hidden text-balance p-4">
+								<p>click generate</p>
 								<p className="mt-2">to create quiz</p>
+								<p className="mt-4 flex items-center justify-center gap-1.5 text-sm">
+									<FileText fontSize="inherit" />{" "}
+									<span className="truncate">{file.path}</span>
+								</p>
 							</div>
 						) : (
 							<div>
