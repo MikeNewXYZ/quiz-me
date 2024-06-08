@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function HomePage() {
 	return (
-		<main className="flex h-screen w-full flex-col items-center justify-center pb-14 text-center">
-			<h1 className="animate-fade-right font-display text-6xl animate-delay-100 sm:text-8xl md:text-9xl">
+		<main className="flex h-dvh w-full flex-col items-center justify-center pb-4 text-center sm:pb-14">
+			<h1 className="animate-fade-right font-display text-6xl leading-[normal_!important] animate-delay-100 sm:text-8xl md:text-9xl">
 				QUIZ-ME
 			</h1>
 			<p className="mt-4 animate-fade-left text-xs animate-delay-300 md:text-lg">

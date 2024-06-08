@@ -7,7 +7,6 @@ import {
 	ArrowFatLeft,
 	ArrowFatRight,
 	CircleNotch,
-	DotOutline,
 } from "@phosphor-icons/react/dist/ssr";
 import BackButton from "@/components/back-button/back-button";
 
@@ -52,7 +51,7 @@ export default function QuizPage() {
 
 	if (!quiz) {
 		return (
-			<main className="flex h-screen w-full items-center justify-center pb-10">
+			<main className="flex h-dvh w-full items-center justify-center overflow-hidden pb-10">
 				<CircleNotch
 					className="animate-spin"
 					size="50%"
@@ -65,7 +64,7 @@ export default function QuizPage() {
 
 	return (
 		<>
-			<main className="flex h-screen w-full items-center justify-center gap-2 px-2 pb-10">
+			<main className="flex h-dvh w-full items-center justify-center gap-2 px-2 pb-10">
 				<button
 					className="text-2xl transition-colors hover:text-red-600 sm:text-5xl"
 					style={{
