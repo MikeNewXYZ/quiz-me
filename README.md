@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Quiz Me
 
-## Getting Started
+_Makes text, documents and youtube videos into flashcards using OpenAI._
 
-First, run the development server:
+![showcase](./assets/showcase.gif)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## About
+
+**URL:** https://quiz-me-production.up.railway.app/ <br>
+**Created by:** [Mike Newberry](https://github.com/MikeNewXYZ)
+
+**_I created this project as a challenge to myself when learning to NEXTJS. It uses the OpenAI API to convert text, documents and transcripts from YouTube vidoes into flashcards._**
+
+</br>
+
+## 💻 Installing
+
+```console
+> git clone https://github.com/MikeNewXYZ/quiz-me.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```console
+> npm i
+> npm run dev
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+</br>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## How it works!
 
-## Learn More
+### 🎨 How did I make the animated background?
 
-To learn more about Next.js, take a look at the following resources:
+[![css animated background](./assets/css-animated-background.png)](./app/globals.css)
+[![js animated background](./assets/js-animated-background.png)](./components/background/background.js)
+The background itself is made using a repeating linear gradient. It is animated using the requestAnimationFrame method, which calls its callback ever frame tick, to move the background position.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤖 How are the flashcards generated?
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[![create quiz](./assets/create-quiz.png)](./lib/createQuiz.js)
+The quiz is generated using ChatGPT, specifically using the "GPT 3.5 Turbo" model, using the OpenAI API. It simply takes in instructions shown above and using that outputs a response in JSON. The response should contain an array of questions.
 
-## Deploy on Vercel
+## 📹 How do I get the YouTube transcript?
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[![youtube transcript](./assets/get-youtube-transcript.png)](./lib/getYouTubeTranscript.js)
+I get the transcript from a YouTube video using a cheeky method. If I were to use the offical YouTube API I would need to get permission from the video creator, luckily theres a library called [youtube-transcript](https://www.npmjs.com/package/youtube-transcript) which does some wizardry.
