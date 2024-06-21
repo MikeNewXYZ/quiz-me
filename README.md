@@ -6,7 +6,7 @@ _Makes text, documents and youtube videos into flashcards using OpenAI._
 
 ## About
 
-**URL:** https://quiz-me-production.up.railway.app/ <br>
+**URL:** [https://quiz-me-production.up.railway.app/](https://quiz-me-gx59.onrender.com/) <br>
 **Created by:** [Mike Newberry](https://github.com/MikeNewXYZ)
 
 **_I created this project as a challenge to myself when learning to NEXTJS. It uses the OpenAI API to convert text, documents and transcripts from YouTube vidoes into flashcards._**
